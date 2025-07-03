@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng hồ THL Watches</title>
+
+    <link rel="stylesheet" href="assets/frontend/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/frontend/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/frontend/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/frontend/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="assets/frontend/css/slimselect.css">
+    <link rel="stylesheet" href="assets/frontend/css/reset.css">
+    <link rel="stylesheet" href="assets/frontend/scss/style.css">
+    <link rel="stylesheet" href="assets/frontend/scss/style-mobile.css">
+</head>
+<body class="not-home">
+<header class="fixed">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <span class="slogan-hd mr-5">Cửa hàng đồng hồ chính hãng THEKEY LUXURY</span>
+                    <a href="#" class="hv-link smooth" title="Hotline: 0855.29.29.29"><i class="fa fa-phone-square" aria-hidden="true"></i> Hotline: 0855.29.29.29</a>
+                </div>
+                <div class="col-md-5 d-flex align-items-center justify-content-end">
+                    <div class="search-top text-center">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="heart-top text-center">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="cart-top text-center">
+                        <div class="cart-mini">
+                            <a href="#" title="Giỏ hàng">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </a>
+                            <span>0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 d-flex align-items-center">
+                    <a href="#" class="hd-logo" title="LOGO">
+                        <img src="assets/frontend/images/logo-1.png" alt="" title="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-md-10">
+                    <div class="main-menu d-flex align-items-center justify-content-end">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Review</a></li>
+                            <li><a href="#">Thu mua</a></li>
+                            <li><a href="#">Báo chí</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#">Tư vấn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="wrapper_breacrumb">
+    <div class="container">
+        <ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="#">
+                    <span itemprop="name">Trang chủ</span>
+                </a>
+                <meta itemprop="position" content="1">
+            </li>
+            <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="#">
+                    <span itemprop="name">Sản phẩm</span>
+                </a>
+                <meta itemprop="position" content="2">
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="section_all page_procategory pt-0">
+    <div class="container">
+        <div class="banner_all_page mb-lg-5 mb-4">
+            <img src="assets/frontend/images/product-banner-1.jpg" alt="" title="" class="img-fluid">
+        </div>
+        <div class="title_all text-center">
+            <span class="text-title after-title">SẢN PHẨM</span>
+        </div>
+        <div class="wapper_fillter_product mb-lg-5 mb-4">
+            <form action="#" method="get" id="from-fillter-product" class="form-fillter mb-lg-5 mb-4" accept-charset="utf-8">
+                <div class="row">
+                    <div class="col col-lg-3 col-6 slim_select">
+                        <select name="gender" id="gender">
+                            <option value="">Giới tính</option>
+                            <option value="1">Nam</option>
+                            <option value="2">Nữ</option>
+                        </select>
+                    </div>
+                    <div class="col col-lg-3 col-6 slim_select">
+                        <select name="material" id="material">
+                            <option value="">Chất liệu</option>
+                            <option value="1">Vàng</option>
+                            <option value="2">Bạch kim</option>
+                            <option value="3">Titanium</option>
+                        </select>
+                    </div>
+                    <div class="col col-lg-3 col-6 slim_select">
+                        <select name="size" id="size">
+                            <option value="">Kích thước</option>
+                            <option value="1">Dưới 36mm</option>
+                            <option value="2">36mm - dưới 38mm</option>
+                            <option value="3">38mm - dưới 40mm</option>
+                        </select>
+                    </div>
+                    <div class="col col-lg-3 col-6 slim_select">
+                        <select name="price" id="price">
+                            <option value="">Giá</option>
+                            <option value="1">Dưới 200 triệu</option>
+                            <option value="2">Từ 200 - 500 triệu VND</option>
+                            <option value="3">Từ 500 - 1 tỷ VND</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row list_product_page mb-lg-4 mb-3" id="list_product_fillter">
+                <div class="col-item col-lg-3">
+                    <div class="item_pro text-center">
+                        <a href="#" class="pro_img" title="">
+                            <img src="assets/frontend/images/rolex-datejust-41-126334-mat-so-xanh-coc-so-la-ma1.png" alt="" title="" class="img-fluid">
+                        </a>
+                        <h2><a href="#" class="cate-title smooth" title="Hublot">Hublot</a></h2>
+                        <h3><a href="#" class="pro-title smooth" title="">Rolex Datejust 41 126334 Mặt Số Xanh Cọc Số La Mã</a></h3>
+                        <div class="pro-price text-center">
+                            <span class="price d-none">5000.000đ</span>
+                            <span class="price_sale">Liên hệ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item col-lg-3">
+                    <div class="item_pro text-center">
+                        <a href="#" class="pro_img" title="">
+                            <img src="assets/frontend/images/rolex-datejust-41-126334-mat-so-xanh-coc-so-la-ma1.png" alt="" title="" class="img-fluid">
+                        </a>
+                        <h2><a href="#" class="cate-title smooth" title="Hublot">Hublot</a></h2>
+                        <h3><a href="#" class="pro-title smooth" title="">Rolex Datejust 41 126334 Mặt Số Xanh Cọc Số La Mã</a></h3>
+                        <div class="pro-price text-center">
+                            <span class="price d-none">5000.000đ</span>
+                            <span class="price_sale">Liên hệ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item col-lg-3">
+                    <div class="item_pro text-center">
+                        <a href="#" class="pro_img" title="">
+                            <img src="assets/frontend/images/rolex-datejust-41-126334-mat-so-xanh-coc-so-la-ma1.png" alt="" title="" class="img-fluid">
+                        </a>
+                        <h2><a href="#" class="cate-title smooth" title="Hublot">Hublot</a></h2>
+                        <h3><a href="#" class="pro-title smooth" title="">Rolex Datejust 41 126334 Mặt Số Xanh Cọc Số La Mã</a></h3>
+                        <div class="pro-price">
+                            <span class="price">5000.000đ</span>
+                            <span class="price_sale">3.500.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item col-lg-3">
+                    <div class="item_pro text-center">
+                        <a href="#" class="pro_img" title="">
+                            <img src="assets/frontend/images/rolex-datejust-41-126334-mat-so-xanh-coc-so-la-ma1.png" alt="" title="" class="img-fluid">
+                        </a>
+                        <h2><a href="#" class="cate-title smooth" title="Hublot">Hublot</a></h2>
+                        <h3><a href="#" class="pro-title smooth" title="">Rolex Datejust 41 126334 Mặt Số Xanh Cọc Số La Mã</a></h3>
+                        <div class="pro-price">
+                            <span class="price">5000.000đ</span>
+                            <span class="price_sale">3.500.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item col-lg-3">
+                    <div class="item_pro text-center">
+                        <a href="#" class="pro_img" title="">
+                            <img src="assets/frontend/images/rolex-datejust-41-126334-mat-so-xanh-coc-so-la-ma1.png" alt="" title="" class="img-fluid">
+                        </a>
+                        <h2><a href="#" class="cate-title smooth" title="Hublot">Hublot</a></h2>
+                        <h3><a href="#" class="pro-title smooth" title="">Rolex Datejust 41 126334 Mặt Số Xanh Cọc Số La Mã</a></h3>
+                        <div class="pro-price">
+                            <span class="price">5000.000đ</span>
+                            <span class="price_sale">3.500.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item col-lg-3">
+                    <div class="item_pro text-center">
+                        <a href="#" class="pro_img" title="">
+                            <img src="assets/frontend/images/rolex-datejust-41-126334-mat-so-xanh-coc-so-la-ma1.png" alt="" title="" class="img-fluid">
+                        </a>
+                        <h2><a href="#" class="cate-title smooth" title="Hublot">Hublot</a></h2>
+                        <h3><a href="#" class="pro-title smooth" title="">Rolex Datejust 41 126334 Mặt Số Xanh Cọc Số La Mã</a></h3>
+                        <div class="pro-price">
+                            <span class="price">5000.000đ</span>
+                            <span class="price_sale">3.500.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item col-lg-3">
+                    <div class="item_pro text-center">
+                        <a href="#" class="pro_img" title="">
+                            <img src="assets/frontend/images/rolex-datejust-41-126334-mat-so-xanh-coc-so-la-ma1.png" alt="" title="" class="img-fluid">
+                        </a>
+                        <h2><a href="#" class="cate-title smooth" title="Hublot">Hublot</a></h2>
+                        <h3><a href="#" class="pro-title smooth" title="">Rolex Datejust 41 126334 Mặt Số Xanh Cọc Số La Mã</a></h3>
+                        <div class="pro-price text-center">
+                            <span class="price d-none">5000.000đ</span>
+                            <span class="price_sale">Liên hệ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-item col-lg-3">
+                    <div class="item_pro text-center">
+                        <a href="#" class="pro_img" title="">
+                            <img src="assets/frontend/images/rolex-datejust-41-126334-mat-so-xanh-coc-so-la-ma1.png" alt="" title="" class="img-fluid">
+                        </a>
+                        <h2><a href="#" class="cate-title smooth" title="Hublot">Hublot</a></h2>
+                        <h3><a href="#" class="pro-title smooth" title="">Rolex Datejust 41 126334 Mặt Số Xanh Cọc Số La Mã</a></h3>
+                        <div class="pro-price text-center">
+                            <span class="price d-none">5000.000đ</span>
+                            <span class="price_sale">Liên hệ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination_all mb-lg-5 mb-4 text-center">
+                <strong>1</strong>
+                <a href="https://thekeyluxury.vn/san-pham/24" data-ci-pagination-page="2">2</a>
+                <a href="https://thekeyluxury.vn/san-pham/48" data-ci-pagination-page="3">3</a>
+                <a href="https://thekeyluxury.vn/san-pham/24" data-ci-pagination-page="2" rel="next">›</a>
+                <a href="https://thekeyluxury.vn/san-pham/1440" data-ci-pagination-page="61">Trang cuối</a>
+            </div>
+        </div>
+        
+        <div class="s-content mb-lg-3 mb-2">
+            <h3 style="text-align: justify;"><span style="font-family: arial, helvetica, sans-serif; font-size: 16px;"><strong>LỜI NÓI ĐẦU VỀ THE KEY LUXURY</strong></span></h3>
+            <p style="text-align: justify;"><span style="font-weight: 400; font-family: arial, helvetica, sans-serif; font-size: 16px;">Đã từ lâu những chiếc đồng hồ đeo tay không còn mang định nghĩa đơn điệu là cỗ máy giúp bạn kiểm soát thời gian nữa. Không chỉ là đồng hồ, đó còn là một món trang sức đẳng cấp không thể thiếu của một người thành đạt. Đẳng cấp đó vượt xa giá trị không gian và thời gian.&nbsp;</span></p>
+        </div>
+    </div>
+</section>
+
+<section class="section_all customer-feedback" style="background-image: url('assets/frontend/images/banner-review-1.jpg');">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="title_all text-center">
+                    <span class="text-title after-title">GÓC BÁO CHÍ</span>
+                </div>
+                <div class="row list-new-1">
+                    <div class="col-lg-12">
+                        <div class="item-new-1 d-flex">
+                            <a href="#" class="img-new c-img img-scale" title="">
+                                <img src="assets/frontend/images/thu-mua-dong-ho-chinh-hieu.jpg" alt="" title="" class="img-fluid">
+                            </a>
+                            <div class="info-new">
+                                <h3><a href="#" class="title smooth">THEKEY LUXURY THU MUA ĐỒNG HỒ CHÍNH HIỆU </a></h3>
+                                <p class="date d-flex align-items-center mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <path d="M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978 c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952 C357.766,320.208,355.981,307.775,347.216,301.211z"></path> </g></g><g> <g> <path d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341 c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341 S375.275,472.341,256,472.341z"></path> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <span class="ml-1">12/08/2021</span>
+                                </p>
+                                <p class="short_content mt-2">Bạn có niềm đam mê mãnh liệt với những sản phẩm đồng hồ thời thượng nhưng nguồn kinh phí eo…</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="item-new-1 d-flex">
+                            <a href="#" class="img-new c-img img-scale" title="">
+                                <img src="assets/frontend/images/thu-mua-dong-ho-chinh-hieu.jpg" alt="" title="" class="img-fluid">
+                            </a>
+                            <div class="info-new">
+                                <h3><a href="#" class="title smooth">THEKEY LUXURY THU MUA ĐỒNG HỒ CHÍNH HIỆU </a></h3>
+                                <p class="date d-flex align-items-center mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g> <g> <path d="M347.216,301.211l-71.387-53.54V138.609c0-10.966-8.864-19.83-19.83-19.83c-10.966,0-19.83,8.864-19.83,19.83v118.978 c0,6.246,2.935,12.136,7.932,15.864l79.318,59.489c3.569,2.677,7.734,3.966,11.878,3.966c6.048,0,11.997-2.717,15.884-7.952 C357.766,320.208,355.981,307.775,347.216,301.211z"></path> </g></g><g> <g> <path d="M256,0C114.833,0,0,114.833,0,256s114.833,256,256,256s256-114.833,256-256S397.167,0,256,0z M256,472.341 c-119.275,0-216.341-97.066-216.341-216.341S136.725,39.659,256,39.659c119.295,0,216.341,97.066,216.341,216.341 S375.275,472.341,256,472.341z"></path> </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+                                    <span class="ml-1">12/08/2021</span>
+                                </p>
+                                <p class="short_content mt-2">Bạn có niềm đam mê mãnh liệt với những sản phẩm đồng hồ thời thượng nhưng nguồn kinh phí eo…</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center"><a href="#" class="btn-link-1 mt-2 smooth" title="Xem tất cả">Xem tất cả</a></p>
+            </div>
+            <div class="col-lg-6">
+                <div class="title_all text-center">
+                    <span class="text-title after-title">TRẢI NGHIỆM KHÁCH HÀNG</span>
+                </div>
+                <div class="row list-video-1">
+                    <div class="col-lg-6">
+                        <div class="item-video-1 text-center">
+                            <a href="#" class="img-video c-img">
+                                <img src="assets/frontend/images/video-4.jpg" alt="" title="" class="img-fluid">
+                                <img src="assets/frontend/images/play-button.svg" alt="" title="" class="play-video img-fluid">
+                            </a>
+                            <a href="#" class="title d-block mt-2" title="Review đồng hồ Arnold & Son Royal TE8 Rose Gold với tính năng Tourbillon">Review đồng hồ Arnold & Son Royal TE8 Rose Gold với tính năng Tourbillon</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="item-video-1 text-center">
+                            <a href="#" class="img-video c-img">
+                                <img src="assets/frontend/images/video-1.jpg" alt="" title="" class="img-fluid">
+                                <img src="assets/frontend/images/play-button.svg" alt="" title="" class="play-video img-fluid">
+                            </a>
+                            <a href="#" class="title d-block mt-2" title="Review đồng hồ Arnold & Son Royal TE8 Rose Gold với tính năng Tourbillon">Review đồng hồ Arnold & Son Royal TE8 Rose Gold với tính năng Tourbillon</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="item-video-1 text-center">
+                            <a href="#" class="img-video c-img">
+                                <img src="assets/frontend/images/video-1.jpg" alt="" title="" class="img-fluid">
+                                <img src="assets/frontend/images/play-button.svg" alt="" title="" class="play-video img-fluid">
+                            </a>
+                            <a href="#" class="title d-block mt-2" title="Review đồng hồ Arnold & Son Royal TE8 Rose Gold với tính năng Tourbillon">Review đồng hồ Arnold & Son Royal TE8 Rose Gold với tính năng Tourbillon</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="item-video-1 text-center">
+                            <a href="#" class="img-video c-img">
+                                <img src="assets/frontend/images/video-4.jpg" alt="" title="" class="img-fluid">
+                                <img src="assets/frontend/images/play-button.svg" alt="" title="" class="play-video img-fluid">
+                            </a>
+                            <a href="#" class="title d-block mt-2" title="Review đồng hồ Arnold & Son Royal TE8 Rose Gold với tính năng Tourbillon">Review đồng hồ Arnold & Son Royal TE8 Rose Gold với tính năng Tourbillon</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center"><a href="#" class="btn-link-1 mt-2 smooth" title="Xem tất cả">Xem tất cả</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="" class="img-logo">
+                    <img src="assets/frontend/images/logo-1.png" alt="" title="" class="img-fluid">
+                </a>
+                <p class="slogan-web mt-3">CỬA HÀNG ĐỒNG HỒ CHÍNH HÃNG THL WATCHES</p>
+                <div class="list__cefti d-flex mt-lg-4 pt-lg-1 mt-2">
+                    <a href="#" title="DMCA" class="img d-block mr-2" rel="nofollow">
+                        <img src="assets/frontend/images/dmca.png" alt="" title="" class="img-fluid">
+                    </a>
+                    <a href="#" title="DMCA" class="img d-block" rel="nofollow">
+                        <img src="assets/frontend/images/bo-cong-thuong.png" alt="" title="" class="img-fluid">
+                    </a>
+                </div>
+                <p class="copy__right mt-3">Copyright ©2021 TheKey Luxury. All rights reserved</p>
+            </div>
+            <div class="col-lg-4">
+                <P class="title-footer">DÀNH CHO NGƯỜI DÙNG</P>
+                <div class="menu-footer">
+                    <ul>
+                        <li><a href=""> Chính sách thanh toán </a></li>
+                        <li><a href=""> Chính sách đổi trả </a></li>
+                        <li><a href=""> Chính sách vận chuyển </a></li>
+                        <li><a href=""> Chính sách bảo mật thông tin </a></li>
+                        <li><a href=""> Chính sách bảo hành sản phẩm </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <P class="title-footer">THL WATCHES LUXURY</P>
+                <div class="s-content">
+                    <p>Số 260-262 Bà Triệu, Lê Đại Hành, Hai Bà Trưng, Hà Nội</p>
+                    <p>Hotline Tư Vấn: <a href="#">0855.29.29.29</a></p>
+                    <p>Email: <a href="#">thekeysupport@gmail.com</a></p>
+                    <p class="d-flex align-items-center link-map"><span class="mr-2">Bản đồ đường đi</span> <a href="#"><img src="assets/frontend/images/icon-map.png" alt="" title="" class="icon-map img-fluid" width="24" height="24"></a></p>
+                    <p class="link_social d-flex align-items-center">
+                        <span class="mr-3">KẾT NỐI VỚI CHÚNG TÔI:</span>
+                        <a href="#" class="mr-3"><i class="icon-social fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="#"><i class="icon-social fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script defer src="assets/frontend/js/jquery-3.4.0.min.js"></script>
+<script defer src="assets/frontend/js/bootstrap.min.js"></script>
+<script defer src="assets/frontend/js/swiper-bundle.min.js"></script>
+<script defer src="assets/frontend/js/jquery.fancybox.min.js"></script>
+<script defer src="assets/frontend/js/slimselect.min.js"></script>
+<script defer src="assets/frontend/js/script-slide.js"></script>
+<script defer src="assets/frontend/js/script.js"></script>
+</body>
+</html>
